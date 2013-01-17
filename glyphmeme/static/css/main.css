@@ -1,0 +1,35 @@
+/*
+Copyright 2013, Michael Pacchioli.
+ 
+This file is part of GlyphMeme.
+
+GlyphMeme is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License, version 3,
+as published by the Free Software Foundation.
+
+GlyphMeme is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with GlyphMeme.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+
+.container {
+	max-width: 500px;
+	text-align: center;
+}
+
+.translation-container {
+	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .75);
+	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .75);
+	box-shadow: 0 0 20px rgba(0, 0, 0, .75);
+	background-color: rgba(255, 255, 255, 0.9);
+	
+	border-radius: 5px;
+
+	text-align:center;	
+	padding: 20px;
+}

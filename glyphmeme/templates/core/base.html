@@ -1,0 +1,81 @@
+{% comment %}
+
+Copyright 2013, Michael Pacchioli.
+ 
+This file is part of GlyphMeme.
+
+GlyphMeme is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License, version 3,
+as published by the Free Software Foundation.
+
+GlyphMeme is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with GlyphMeme.  If not, see <http://www.gnu.org/licenses/>.
+
+{% endcomment %}
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>GlyphMeme</title>
+    
+    <link href="{{ STATIC_URL }}bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/main.css" />
+
+    <script src="{{ STATIC_URL }}js/jquery-1.8.3.min.js"></script>
+
+    <script src="{{ STATIC_URL }}bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="{{ STATIC_URL }}js/array.js"></script>
+	<script src="{{ STATIC_URL }}js/config.js"></script>	
+    <script src="{{ STATIC_URL }}js/main.js"></script>
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="container">
+	<br/>
+	<h1>GlyphMeme</h1>
+	<h3 style="color:blue;">Your Score: <span id="number-correct">0</span>/<span id="number-tried">0</span></h3>
+	
+	<br/>
+	
+	<div class="row-fluid">
+	  <div id="translation-container" class="span12 translation-container">
+		<div id="category" class="row-fluid">
+			Category: {{ category.name }}
+		</div>
+		<br/><br/>
+		<div id="translations" class="row-fluid"></div>
+		<br/><br/>
+		<div id="form-div" class="row-fluid">
+			<form id="form1" name="form1">
+				Guess the English word:
+				<br/>
+				<input id="guess" name="guess" type="text" />
+				<br/>
+				<button id="button" class="btn">Submit</button>
+			</form>
+		</div>
+	  </div>
+	</div>
+</div>
+
+</body>
+
+</html>
